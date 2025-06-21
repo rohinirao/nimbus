@@ -39,7 +39,7 @@ It shows the **current weather** and a **3-day forecast** for any city in the wo
 
    ```bash
    git clone https://github.com/rohinirao/nimbus.git
-   cd weather-app
+   cd nimbus
    ```
 
 2. **Install dependencies**
