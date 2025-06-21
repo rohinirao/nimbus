@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather App</title>
+  <style>
+    body { font-family: Arial; text-align: center; padding: 20px; }
+    form { margin-bottom: 20px; }
+    .card { border: 1px solid #ddd; padding: 10px; margin: 10px auto; width: 300px; }
+  </style>
+</head>
+<body>
+  <h1>🌤️ Weather App</h1>
+  <form method="POST">
+    <input type="text" name="city" placeholder="Enter city" required />
+    <button type="submit">Get Weather</button>
+  </form>
+
+  <% if (error) { %>
+    <p style="color: red;"><%= error %></p>
+  <% } %>
+
+  <% if (weather) { %>
+    <div class="card">
+      <h2><%= weather.city %>, <%= weather.country %></h2>
+      <p>🌡️ Temp: <%= weather.temp %>°C</p>
+      <p>☁️ Condition: <%= weather.description %></p>
+    </div>
+  <% } %>
+
+  <% if (forecast && forecast.length > 0) { %>
+    <h3>3-Day Forecast</h3>
+    <% forecast.forEach(day => { %>
+      <div class="card">
+        <strong><%= day.date %></strong>
+        <p>🌡️ <%= day.temp %>°C</p>
+        <p>☁️ <%= day.description %></p>
+      </div>
+    <% }) %>
+  <% } %>
+</body>
+</html>
