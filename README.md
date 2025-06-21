@@ -9,7 +9,7 @@ It shows the **current weather** and a **3-day forecast** for any city in the wo
 ## 📸 Demo
 
 ![Weather App Screenshot](https://via.placeholder.com/800x400?text=Weather+App+Demo)  
-*(You can replace this with an actual screenshot later.)*
+*TODO*
 
 ---
 
@@ -38,7 +38,7 @@ It shows the **current weather** and a **3-day forecast** for any city in the wo
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/weather-app.git
+   git clone https://github.com/rohinirao/nimbus.git
    cd weather-app
    ```
 
